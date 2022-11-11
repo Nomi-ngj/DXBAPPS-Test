@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hlM-ZV-Th7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabbar Controller-->
+        <scene sceneID="NjX-Te-8BV">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hlM-ZV-Th7" customClass="TabbarController" customModule="DXBAPPS_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B0f-90-oj1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="selectedImageTintColor" name="AppPrimaryColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MYK-UC-yI8" kind="relationship" relationship="viewControllers" id="7b6-xO-G3R"/>
+                        <segue destination="frA-qP-HsK" kind="relationship" relationship="viewControllers" id="zMn-9G-pfi"/>
+                        <segue destination="VHN-YM-4va" kind="relationship" relationship="viewControllers" id="xz6-q3-0Io"/>
+                        <segue destination="oYw-Mh-KzB" kind="relationship" relationship="viewControllers" id="RNK-Eu-OXw"/>
+                        <segue destination="bjV-Lk-iSJ" kind="relationship" relationship="viewControllers" id="W5f-WS-AdI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLA-MK-g0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-848" y="-307"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="DLn-Wx-fqE">
+            <objects>
+                <navigationController storyboardIdentifier="DashboardNavigationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="MYK-UC-yI8" customClass="DashboardNavigationViewController" customModule="DXBAPPS_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="tabbar_item_home" selectedImage="tabbar_item_home_selected" id="kco-HI-dJj"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="150"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N5m-Gc-kpg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDZ-z3-qSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-614"/>
+        </scene>
+        <!--OtherViewControllers-->
+        <scene sceneID="iQB-sZ-kVX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DashboardViewController" referencedIdentifier="OtherViewControllers" id="4vm-hJ-cJj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="u2E-O9-Tcn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Joj-dy-Qbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="-265"/>
+        </scene>
+        <!--Orders-->
+        <scene sceneID="VdD-cI-ALf">
+            <objects>
+                <navigationController title="Orders" id="frA-qP-HsK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Orders" image="tabbar_item_orders" selectedImage="tabbar_item_orders_selected" id="bYq-Qj-zz0"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="150"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N2o-uS-6wc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4vm-hJ-cJj" kind="relationship" relationship="rootViewController" id="qoE-JW-CEa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zog-YJ-Snt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-460"/>
+        </scene>
+        <!--New Order-->
+        <scene sceneID="HMM-Bp-2CL">
+            <objects>
+                <navigationController title="New Order" id="VHN-YM-4va" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="QJs-OZ-na4"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="150"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JD4-Lq-wua">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4vm-hJ-cJj" kind="relationship" relationship="rootViewController" id="nwv-EN-Zda"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMv-yf-KlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-308"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="6dj-iv-IuR">
+            <objects>
+                <navigationController title="Notifications" id="oYw-Mh-KzB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="tabbar_item_notification" selectedImage="tabbar_item_notification_selected" id="QfP-IH-MwQ"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="150"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="agY-Dt-Nrg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4vm-hJ-cJj" kind="relationship" relationship="rootViewController" id="X1o-RG-9cs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNY-er-NAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="-154"/>
+        </scene>
+        <!--My Account-->
+        <scene sceneID="LtN-KH-HkQ">
+            <objects>
+                <navigationController title="My Account" id="bjV-Lk-iSJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Account" image="tabbar_item_myAccount" selectedImage="tabbar_item_myAccount_selected" id="SdA-Hy-O2c"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="150"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xpw-Re-byQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4vm-hJ-cJj" kind="relationship" relationship="rootViewController" id="ERV-Zf-t7o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asZ-lP-KCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="1"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ERV-Zf-t7o"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="tabbar_item_home" width="28" height="27.333333969116211"/>
+        <image name="tabbar_item_home_selected" width="28" height="27.333333969116211"/>
+        <image name="tabbar_item_myAccount" width="23.333333969116211" height="26"/>
+        <image name="tabbar_item_myAccount_selected" width="23.333333969116211" height="26"/>
+        <image name="tabbar_item_notification" width="26" height="29.666666030883789"/>
+        <image name="tabbar_item_notification_selected" width="26" height="29.666666030883789"/>
+        <image name="tabbar_item_orders" width="26.666666030883789" height="27.333333969116211"/>
+        <image name="tabbar_item_orders_selected" width="26.666666030883789" height="27.333333969116211"/>
+        <namedColor name="AppPrimaryColor">
+            <color red="0.0" green="0.27900001406669617" blue="0.38499999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
