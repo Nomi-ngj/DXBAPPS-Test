@@ -1,5 +1,5 @@
 
-# Task-DXBAPPS (Nouman Gul Junejo)
+# Task-DXBAPPS
 
 Adding Custom Tabbar with floating button in the middle of items.
 Add Dashboard Screen.
